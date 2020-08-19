@@ -438,9 +438,11 @@ public class TransactFragment extends Fragment implements View.OnClickListener, 
 
     private void callWithdrawAPI(String xmlBiometricString) {
 
-        String username = "";
+        AEPSIntent aepsIntent = new AEPSIntent(getActivity().getIntent());
 
-        String dcode = "";
+        String username = aepsIntent.getUsername();
+
+        String dcode = aepsIntent.getDcode();
 
         String transCode = "";
 

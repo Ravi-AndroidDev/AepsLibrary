@@ -3,7 +3,7 @@
     package="com.ebixcash.aeps">
 
     <application>
-        <activity android:name="com.ebixcash.aeps.MainActivity"
+        <activity android:name="com.ebixcash.aeps.AepsActivity"
             android:windowSoftInputMode="stateAlwaysHidden"/>
     </application>
 

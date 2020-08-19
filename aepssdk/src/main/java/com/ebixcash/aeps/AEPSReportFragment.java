@@ -317,9 +317,11 @@ public class AEPSReportFragment extends Fragment implements View.OnClickListener
 
     private void callAPI(){
 
+        AEPSIntent aepsIntent = new AEPSIntent(getActivity().getIntent());
+
         String transCode = "R1";
 
-        String dcode = "";
+        String dcode = aepsIntent.getDcode();
 
         String moduleName = "AEPS";
 

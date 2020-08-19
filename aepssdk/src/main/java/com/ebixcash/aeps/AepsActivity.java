@@ -6,11 +6,12 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity extends FragmentActivity implements View.OnClickListener{
+public class AepsActivity extends FragmentActivity implements View.OnClickListener{
 
     private TextView tvReport,tvWithdraw,tvBalance;
 
@@ -45,6 +46,12 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         tvReport.setOnClickListener(this);
 
         imageViewBack.setOnClickListener(this);
+
+        AEPSIntent homeIntent = new AEPSIntent(getIntent());
+
+        Log.d("HomeActivity", "username: " + homeIntent.getUsername());
+
+        Log.d("HomeActivity", "password: " + homeIntent.getDcode());
     }
 
     private void initializeWithdrawTab(){
