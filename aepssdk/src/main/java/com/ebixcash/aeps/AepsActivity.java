@@ -22,7 +22,7 @@ public class AepsActivity extends FragmentActivity implements View.OnClickListen
 
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_aeps);
 
         getID();
 
