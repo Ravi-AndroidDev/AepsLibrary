@@ -427,7 +427,7 @@ public class TransactFragment extends Fragment implements View.OnClickListener, 
                     }*/
                     callWithdrawAPI(xmlBiometricString);
 
-                    System.out.println("RESULT PID DATA: " + xmlBiometricString);
+                    System.out.println("RESULT PID DATA 1: " + xmlBiometricString);
 
                 } catch (Exception e) {
 
