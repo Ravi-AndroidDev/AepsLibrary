@@ -417,14 +417,15 @@ public class TransactFragment extends Fragment implements View.OnClickListener, 
 
                     xmlBiometricString = new String(byteText, "UTF-8");
 
-                    if(xmlBiometricString.contains("errInfo")){
+                    /*if(xmlBiometricString.contains("errInfo")){
 
                         util.alertboxConnectivity("Alert!", "Unknown error occured. Please try again.");
 
                     }else{
 
                         callWithdrawAPI(xmlBiometricString);
-                    }
+                    }*/
+                    callWithdrawAPI(xmlBiometricString);
 
                     System.out.println("RESULT PID DATA: " + xmlBiometricString);
 
